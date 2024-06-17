@@ -23,7 +23,7 @@
   <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
       <div class="container">
-        <button class="navbar-brand section-title">Nome do Restaurante</button>
+        <h1 class="navbar-brand section-title">Nome do Restaurante</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +36,7 @@
                 </a>
               </li>
               <li class="nav-item fw-bold">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="#eventos">
                   <i class="bi bi-calendar-check me-1"></i>
                   Eventos
                 </a>
@@ -90,9 +90,9 @@
                 <img class="d-block w-100 rounded" src="images/restaurante.jpg" alt="Foto do espaço interno do restaurante">
               </div>
               <div class="col-md-7">
-                <h2 class="section-title">Sobre <span>o restaurante</span></h2>
+                <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi sapiente ipsam, eligendi provident natus, eius deserunt porro voluptatibus sit similique ad quisquam quos labore nemo quibusdam nisi, soluta temporibus!</p>
-                <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint, odit numquam laborum eius labore ea. Totam facere illo unde repellat sit, dolore saepe alias dicta odio, fugiat nihil modi.</p>
                 <ul>
                   <li>Item 1</li>
@@ -104,8 +104,40 @@
           </div>
         </div>
       </section>
+      <section id="eventos" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img src="images/eventos/aniversario.jpg" class="d-block w-100 rounded mb-2" alt=""> <!-- rounded = arredondamento das bordas Bootstrap-->
+              <h3 class="section-title text-colored fs-4"> <!-- Fs-4 (font-size - tamanho 4) -->
+                <i class="bi bi-calendar-heart-fill"></i>
+                Aniversários
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus sed repellendus tempora ea magnam vel modi, esse dolor veritatis cumque enim, aut officia deserunt quod unde adipisci doloremque sunt.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/eventos/casamento.jpg" class="d-block w-100 rounded mb-2" alt="">
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-arrow-through-heart-fill"></i>
+                Recepção para casamentos
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus sed repellendus tempora ea magnam vel modi, esse dolor veritatis cumque enim, aut officia deserunt quod unde adipisci doloremque sunt.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/eventos/confraternizacoes.jpg" class="d-block w-100 rounded mb-2" alt="">
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-people-fill"></i>
+                Confraternizações
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus sed repellendus tempora ea magnam vel modi, esse dolor veritatis cumque enim, aut officia deserunt quod unde adipisci doloremque sunt.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
-    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
