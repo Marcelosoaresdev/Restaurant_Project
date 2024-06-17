@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .navbar {
@@ -15,11 +15,15 @@ body {
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-brand {
-    font-family: Pacifico, cursive;
-    background-color: transparent;
-    border: none;
+  font-family: Pacifico, cursive;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-toggler {
+  background-color: #ffeae6;
 }
