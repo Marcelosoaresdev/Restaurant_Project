@@ -19,11 +19,22 @@ body {
 }
 
 .navbar-brand {
-  font-family: Pacifico, cursive;
   background-color: transparent;
   border: none;
 }
 
 .navbar-toggler {
+  background-color: #ffeae6;
+}
+
+.section-title {
+  font-family: Pacifico, cursive;
+}
+
+.section-title span {
+  color: #e15f41;
+}
+
+#sobre-o-restaurante {
   background-color: #ffeae6;
 }

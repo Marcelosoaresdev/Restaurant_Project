@@ -21,16 +21,16 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
       <div class="container">
-        <button class="navbar-brand">Nome do Restaurante</button>
+        <button class="navbar-brand section-title">Nome do Restaurante</button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
             <span class="navbar-toggler-icon"></span>
         </button>
         <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao"> <!-- justify-content-end pois o collapse deixou os itens um do lado do outro -->
             <ul class="nav nav-pills d-block d-md-flex"> <!-- Quando o display estiver na largura media pra frente, vai ser aplicado display flex (d-md-flex) -->
               <li class="nav-item fw-bold">
-                <a class="nav-link active" href="">
+                <a class="nav-link" href="#sobre-o-restaurante">
                   <i class="bi bi-house-door me-1"></i>
                   Sobre o restaurante
                 </a>
@@ -57,6 +57,54 @@
           </nav>
       </div>
     </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+      <section id="sobre-o-restaurante">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="images/slides/slide1.png" alt="Foto do espaço interno do restaurante">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="images/slides/slide2.png" alt="Duas taças de vinho">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="images/slides/slide3.png" alt="Uma mesa com comida">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="pt-5 pb-5">
+            <div class="container">
+              <div class="row">
+               <div class="col-md-5">
+                <img class="d-block w-100 rounded" src="images/restaurante.jpg" alt="Foto do espaço interno do restaurante">
+               </div>
+               <div class="col-md-7">
+                <h2 class="section-title">Sobre <span>o restaurante</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi sapiente ipsam, eligendi provident natus, eius deserunt porro voluptatibus sit similique ad quisquam quos labore nemo quibusdam nisi, soluta temporibus!</p>
+                <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint, odit numquam laborum eius labore ea. Totam facere illo unde repellat sit, dolore saepe alias dicta odio, fugiat nihil modi.</p>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
     "></script>
