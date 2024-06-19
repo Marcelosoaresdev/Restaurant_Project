@@ -27,6 +27,11 @@ body {
   background-color: #ffeae6;
 }
 
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .section-title {
   font-family: Pacifico, cursive;
 }
@@ -68,4 +73,9 @@ body {
   .carousel-item img {
     height: 280px;
   }
+ 
+  #diff {
+    padding-top: 10px
+  }
+  
 }
